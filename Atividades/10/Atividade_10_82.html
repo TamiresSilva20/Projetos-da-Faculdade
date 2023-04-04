@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+<script language="JavaScript">
+
+var n1,n2,n3,X;
+n1 = prompt("Digite um numero inteiro:"); //entrada de dados
+n2 = prompt("Digite um numero inteiro:"); //entrada de dados
+n3 = prompt("Digite um numero inteiro:");//entrada de dados
+
+		if (n1 > n2) {
+			X = n2;
+			n2 = n1;
+			n1 = X;
+		} else {
+			n1=n1;
+			n2=n2;
+		}
+		if (n1 > n3) {
+			X = n3;
+			n3 = n1;
+			n1 = X;
+		} else {
+			n1=n1;
+			n3=n3;
+		}
+		if (n2 > n3) {
+			X = n3;
+			n3 = n2;
+			n2 = X;
+		} else {
+			n2=n2;
+			n3=n3;
+		}
+
+alert("Numeros em ordem crescente: " + Number(n1) +" , "+ Number(n2) +" , "+ Number(n3) );//saida de dados
+ 
+
+
+</script>
+
+</head>
+
+<body>
+    <h1>
+Numeros em ordem crescente
+    </h1>
+</body>
+</html>
