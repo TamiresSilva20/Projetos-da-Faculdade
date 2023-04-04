@@ -1,0 +1,78 @@
+<head>
+    <meta charset="utf-8">
+    <title>Fatec Itaqua</title>
+    <script language="JavaScript">
+        /*
+        Nome: Tamires Marlene
+        RA: 1550782121031
+        Data: 31/03/23
+        Exercício número: 94
+        Questionário número: 10 B
+
+        Código    Cargo     Percentual
+         101     Gerente       10%
+         102     Engenheiro    20%
+         103      Técnico      30%
+        */
+
+
+        var nSalario;
+
+        var cod = prompt("Digite O código  do Funcionario:"); //entrada de dados
+        var cargo = prompt("Digite  O cargo do Funcionario:") ; //entrada de dados
+        var salario = Number(prompt("Digite o Salario do funcionario: "))//entrada de  dados
+        if ( cod == 101) {
+            nSalario = Number(salario * 1.1);
+            alert(+ cargo + " : Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario));
+        }
+
+        if (  cod == 102) {
+            nSalario = Number(salario * 1.2);
+            alert(+ cargo + " : Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario));
+        }
+        if ( cod == 103) {
+            nSalario = Number(salario * 1.3);
+            alert(+ cargo + " : Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario));
+        }
+        if (cod < 101 || cod > 103) {
+            nSalario = Number(salario * 1.4);
+            alert(+ cargo + " : Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario));
+        }
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <table border="1">
+        <caption style="font-family: 'Segoe UI'; font-size: larger; font-weight: bolder;">Tabela de Cargos</caption>
+        <tr align="center">
+            <th> Código</th>
+            <th> Cargo</th>
+            <th>Percentual</th>
+        </tr>
+        <tr align="center">
+            <td>101 </td>
+            <td>Gerente </td>
+            <td>10%</td>
+        </tr>
+        <tr align="center">
+            <td>102 </td>
+            <td>Engenheiro </td>
+            <td>20%</td>
+        </tr>
+        <tr align="center">
+            <td>103 </td>
+            <td>Técnico </td>
+            <td>30%</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

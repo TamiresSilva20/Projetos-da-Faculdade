@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fatec Itaqua</title>
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <script language="JavaScript">
+        /*
+       Nome: Tamires Marlene
+       RA: 1550782121031
+       Data: 01/04/23
+       Exercício número: 98
+       Questionário número: 10 B
+       */
+
+        function CalcularMedia() {
+
+            var n1 = document.getElementById("txtN1").value;
+            var n2 = document.getElementById("txtN2").value;
+            var n3 = document.getElementById("txtN3").value;
+            var n4 = document.getElementById("txtN4").value;
+            var media = (Number(n1) + Number(n2) + Number(n3) + Number(n4)) / 4;
+            if (media >= 7) {
+                document.getElementById("txtResultado").value = " !!Você foi Aprovado ●‿● !!\n Sua media é : " + media;
+
+            } else {
+                document.getElementById("txtResultado").value = " Você foi Reprovado ●︿● \n Sua media é : " + media;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="area">
+
+        <form id="formulario" method="post">
+
+
+            <fieldset>
+                <legend>Ordenando em ordem crescente</legend> <br>
+                <label> N1:</label>
+                <input type="text" placeholder="Digite a primeira nota" name="txtN1" id="txtN1"><br><br>
+                <label> N2:</label>
+                <input type="text" placeholder="Digite a segunda nota" name="txtN2" id="txtN2"><br><br>
+                <label> N3:</label>
+                <input type="text" placeholder="Digite a terceira nota" name="txtN3" id="txtN3"><br><br>
+                <label> N4:</label>
+                <input type="text" placeholder="Digite a quarta nota" name="txtN4" id="txtN4"><br><br>
+                <textarea id="txtResultado" class="txtarea" rows="3" cols="27"></textarea><br>
+                <input type="button" value="Calcular Media" onclick="CalcularMedia();">
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>
