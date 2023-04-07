@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <script language="JavaScript">
+      
+        function Verificar() {
+
+            var n1 = parseInt(document.getElementById("txtN1").value);
+
+            //maior
+             if (n1 <= 3 )  {
+                document.getElementById("txtResultado").value = " "+n1;
+             }else{
+                document.getElementById("txtResultado").value = "Digite outro Numero ";
+             }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="area">
+
+        <form id="formulario" method="post">
+
+
+            <fieldset>
+                <legend>Valor Não Maior que 3</legend> <br>
+                <label> N1:</label>
+                <input type="text" placeholder="Digite um Numero Inteiro" name="txtN1" id="txtN1"><br><br>
+                <textarea id="txtResultado" class="txtarea" rows="3" cols="27"></textarea><br>
+                <input type="button" value="Verificar " onclick="Verificar();">
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

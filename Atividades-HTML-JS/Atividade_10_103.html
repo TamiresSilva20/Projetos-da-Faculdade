@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <script language="JavaScript">
+       
+
+        function ParImpar() {
+
+            var n1 = parseInt(document.getElementById("txtN1").value);
+
+            //maior
+            var x = Number(n1 % 2)
+            if (x == 0) {
+                document.getElementById("txtResultado").value = "O Numero  " + n1 + " é Par";
+            } else {
+                document.getElementById("txtResultado").value = "O Numero  " + n1 + " é Impar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="area">
+
+        <form id="formulario" method="post">
+
+
+            <fieldset>
+                <legend>O Numero é Impar ou Par</legend> <br>
+                <label> N1:</label>
+                <input type="text" placeholder="Digite um Numero Inteiro" name="txtN1" id="txtN1"><br><br>
+                <textarea id="txtResultado" class="txtarea" rows="3" cols="27"></textarea><br>
+                <input type="button" value="Verificar " onclick="ParImpar();">
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

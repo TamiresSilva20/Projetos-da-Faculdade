@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <script type="text/JavaScript" src="Ex_107.js">
+      
+
+    </script>
+</head>
+
+<body>
+    <div id="area">
+
+        <form id="formulario" method="post">
+
+
+            <fieldset style="width: 200px;">
+                <legend>Aumento de Salario</legend> <br>
+                <table border="1">
+                    <caption style="font-family: 'Segoe UI'; font-size: larger; font-weight: bolder;">Tabela de Cargos</caption>
+                    <tr align="center">
+                        <th> Código</th>
+                        <th> Cargo</th>
+                        <th>Percentual</th>
+                    </tr>
+                    <tr align="center">
+                        <td>101 </td>
+                        <td>Gerente </td>
+                        <td>10%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>102 </td>
+                        <td>Engenheiro </td>
+                        <td>20%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>103 </td>
+                        <td>Técnico </td>
+                        <td>30%</td>
+                    </tr>
+            
+                </table><br><br>
+                <label> Código:</label><br>
+                <input type="text" placeholder="Digite o Código ou o Cargo do Funcionario" name="txtCod" id="txtCod" style="width: 260px;"><br><br>
+                <label>Salario:</label><br>
+                <input type="text" placeholder="Digite  o salario do Funcionario" name="txtSal" id="txtSal"style="width: 260px;"><br><br>
+                <label>Total:</label><br>
+                <textarea id="txtResultado" class="txtarea" rows="3" cols="27"></textarea><br>
+                <input type="button" value="Calcular" onclick="Calcular();">
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

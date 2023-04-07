@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <script language="JavaScript">
+     
+        function VerFaixa() {
+
+            var n1 = parseInt(document.getElementById("txtN1").value);
+
+            //maior
+            if (n1 >= 1 && n1 <= 9) {
+                document.getElementById("txtResultado").value = "O Valor está na faixa ";
+            } else {
+                document.getElementById("txtResultado").value = "O Valor está Fora da faixa Permitida";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="area">
+
+        <form id="formulario" method="post">
+
+
+            <fieldset>
+                <legend>Valor na faixa de 1 a 9 </legend> <br>
+                <label> N1:</label>
+                <input type="text" placeholder="Digite um Numero" name="txtN1" id="txtN1"><br><br>
+                <textarea id="txtResultado" class="txtarea" rows="3" cols="30"></textarea><br>
+                <input type="button" value="Verificar " onclick="VerFaixa();">
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

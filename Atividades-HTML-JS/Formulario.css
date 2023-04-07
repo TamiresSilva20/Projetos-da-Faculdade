@@ -1,0 +1,80 @@
+#area
+{
+  position:right;
+  right:37%;
+  top:10em;
+  width:320px;
+  height:270px;
+}
+ #formulario
+{
+  border: #0000;
+  position:right;
+  display:block;
+  position:right;
+  right:37%;
+  top:10em;
+  width:320px;
+  height:270px;
+}
+
+
+fieldset
+{
+  background-color:#fffdfde6;
+  width:auto; 
+  height:auto;
+}
+legend
+{
+  font-weight:bold;
+  font-family: "Segoe UI","Arial","Times New Roman";
+}
+
+#formulario label
+{
+  font-family: 'Segoe UI';
+  position:right;
+  right:19px;
+  margin-right:5px;
+}
+
+#formulario input
+{
+  
+  border-radius: 3px;
+  background-color:#82aafc;
+  width: 350px auto;
+  color:white;
+  font-weight:normal;
+  font-family: 'Segoe UI';
+  position:center;
+  
+  
+}
+
+
+#formulario textarea.txtarea
+{
+  font-weight:bold;
+  font-family: 'Segoe UI';
+  position:right;
+  background-color:#82aafc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #eeee}
+
+th {
+  background-color: #82aafc;
+  color: white;
+}
