@@ -4,5 +4,5 @@ function Calcular() {
         soma += i;
     }
 
-    document.getElementById("resultado").value = soma;
+    document.getElementById("resposta").value = soma;
 }
