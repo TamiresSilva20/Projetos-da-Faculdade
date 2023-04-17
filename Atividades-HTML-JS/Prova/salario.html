@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prova</title>
+    <script language="JavaScript">
+        var nSalario;
+        var salario = parseFloat(prompt("Digite o Salario do funcionario: "));
+        var cod = prompt("Digite O código ou O cargo do Funcionario:"); 
+
+        while(cod == 'gerente' || cod == 101) {
+            nSalario = parseFloat(salario * 1.1);
+            alert( ": Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario).toFixed(2));
+       break
+        }
+
+
+        while(cod == 'engenheiro' || cod == 102) {
+            nSalario = parseFloat(salario * 1.2);
+            alert( ": Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario).toFixed(2));
+            break
+        }
+        while (cod == 'técnico' || cod == 103) {
+            nSalario = parseFloat(salario * 1.3);
+            alert( ": Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario).toFixed(2));
+        }
+        while (cod < 101 || cod > 103) {
+            nSalario = parseFloat(salario * 1.4);
+            alert( ": Antigo salario: R$" + salario + "\nNovo Salario: R$" + nSalario + "\nDiferença: R$" + (nSalario - salario).toFixed(2));
+            break
+        }
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <table border="1">
+        <caption style="font-family: 'Segoe UI'; font-size: larger; font-weight: bolder;">Tabela de Cargos</caption>
+        <tr align="center">
+            <th> Código</th>
+            <th> Cargo</th>
+            <th>Percentual</th>
+        </tr>
+        <tr align="center">
+            <td>101 </td>
+            <td>Gerente </td>
+            <td>10%</td>
+        </tr>
+        <tr align="center">
+            <td>102 </td>
+            <td>Engenheiro </td>
+            <td>20%</td>
+        </tr>
+        <tr align="center">
+            <td>103 </td>
+            <td>Técnico </td>
+            <td>30%</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

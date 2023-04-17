@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head title="prova">
+    <meta charset="utf-8">
+ <script language="JavaScript">
+   
+    function Calcular(){
+       var idadeDia= Number (document.getElementById("idade").value);
+       var ano=Number(idadeDia/360);
+       var mes=Number((idadeDia%360)/30);
+       var dia=Number(idadeDia%30);
+        document.getElementById("resposta").value = "Você tem : \n"+ ano.toFixed(0)+" anos "+mes.toFixed(0)+" Meses e "+dia.toFixed(0)+" Dias "
+    }
+    
+ </script>
+</head>
+<body >
+    <form method="post">
+        <fieldset>
+            <legend> Idade expressa  em anos, meses e dias.</legend>
+            <label> idade em dias:</label><br><br>
+            <input type="text" id="idade" placeholder="Digite sua idade em dias"><br><br>
+            <textarea name="Resultado" id="resposta" cols="30" rows="10"></textarea><br><br>
+        <input type="button" value="Calcular" onclick="Calcular()">
+        </fieldset>
+    </form>
+</body>
+</html>
